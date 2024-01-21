@@ -1,7 +1,8 @@
-let name = "Aquiles"
+let userName = "Aquiles"
 let rank = "nothing"
+let balance = 0
 function classification(wins, loses){
-    let balance = wins - loses
+    balance = wins - loses
     if(balance > 10 && balance <= 20){
         rank = "Bronze"
     } else if(balance > 20 && balance <= 50){
@@ -21,5 +22,5 @@ function classification(wins, loses){
     
 }
 
-classification(50, 20)
-console.log(rank)
+classification(100, 33)
+console.log(`The gamer ${userName} have a balance of ${balance} and be in the rank ${rank}!`)
